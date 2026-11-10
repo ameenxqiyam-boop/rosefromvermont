@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600;700&family=Homemade+Apple&display=swap');
+
+:root {
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+  color: #343a3a;
+  background: #faf8f2;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+
+  --cream: #faf8f2;
+  --cream-deep: #f3efe6;
+  --paper: #fffdf8;
+  --teal: #247f79;
+  --teal-dark: #145b59;
+  --teal-soft: #a8d5cf;
+  --mint: #e5f3ef;
+  --lavender: #e9e2f5;
+  --lavender-deep: #c9bce0;
+  --charcoal: #343a3a;
+  --muted: #737c77;
+  --line: rgba(36, 90, 83, .17);
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --hand: 'Homemade Apple', 'Segoe Print', cursive;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 84px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--cream);
+}
+
+body, button, a { -webkit-tap-highlight-color: transparent; }
+button, a { font: inherit; }
+button { color: inherit; }
+a { color: inherit; }
+button:focus-visible, a:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 4px;
+}
+img, svg { display: block; max-width: 100%; }
+::selection { color: var(--teal-dark); background: var(--teal-soft); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
